@@ -1,14 +1,16 @@
 {
-  "name": "spread-app",
+  "name": "nextjs-shadcn",
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "dev": "next dev --turbopack",
-    "build": "next build --turbopack",
+    "dev": "next dev -H 0.0.0.0 --turbopack",
+    "build": "next build",
     "start": "next start",
-    "lint": "eslint"
+    "lint": "bunx tsc --noEmit && next lint",
+    "format": "bunx biome format --write"
   },
   "dependencies": {
+<<<<<<< HEAD
     "next": "15.5.3",
     "react": "19.1.0",
     "react-dom": "19.1.0"
@@ -23,5 +25,32 @@
     "eslint-config-next": "15.5.3",
     "tailwindcss": "^4",
     "typescript": "^5"
+=======
+    "@radix-ui/react-avatar": "^1.1.10",
+    "@radix-ui/react-label": "^2.1.7",
+    "@radix-ui/react-slot": "^1.2.3",
+    "@radix-ui/react-tabs": "^1.1.13",
+    "class-variance-authority": "^0.7.1",
+    "clsx": "^2.1.1",
+    "lucide-react": "^0.475.0",
+    "next": "^15.3.2",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "same-runtime": "^0.0.1",
+    "tailwind-merge": "^3.3.0",
+    "tailwindcss-animate": "^1.0.7"
+  },
+  "devDependencies": {
+    "@biomejs/biome": "1.9.4",
+    "@eslint/eslintrc": "^3.3.1",
+    "@types/node": "^20.17.50",
+    "@types/react": "^18.3.1",
+    "@types/react-dom": "^18.3.1",
+    "eslint": "^9.27.0",
+    "eslint-config-next": "15.1.7",
+    "postcss": "^8.5.3",
+    "tailwindcss": "^3.4.17",
+    "typescript": "^5.8.3"
+>>>>>>> 9ed2f30d22c28938f04a7a541e07f7f3b6b2853a
   }
 }
